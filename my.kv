@@ -1,0 +1,85 @@
+#:kivy 1.0
+<calculator>
+    GridLayout:
+        size: root.width,root.height
+        cols:1
+        Label:
+            id:outnum
+            font_size:(root.width/4) / ((len(self.text)+4)/4)
+            text:""
+            size_hint:1,0.4
+        GridLayout:
+            size: root.width,root.height
+            cols:4
+            Button:
+                text:"9"
+                font_size:root.height/10
+                on_press:root.click("9")
+            Button:
+                text:"8"
+                font_size:root.height/10
+                on_press:root.click("8")
+            Button:
+                text:"7"
+                font_size:root.height/10
+                on_press:root.click("7")
+            Button:
+                text:"/"
+                font_size:root.height/10
+                on_press:root.click("/")
+            Button:
+                text:"6"
+                font_size:root.height/10
+                on_press:root.click("6")
+            Button:
+                text:"5"
+                font_size:root.height/10
+                on_press:root.click("5")
+            Button:
+                text:"4"
+                font_size:root.height/10
+                on_press:root.click("4")
+            Button:
+                text:"*"
+                font_size:root.height/10
+                on_press:root.click("*")
+            Button:
+                text:"3"
+                font_size:root.height/10
+                on_press:root.click("3")
+            Button:
+                text:"2"
+                font_size:root.height/10
+                on_press:root.click("2")
+            Button:
+                text:"1"
+                font_size:root.height/10
+                on_press:root.click("1")
+            Button:
+                text:"-"
+                font_size:root.height/10
+                on_press:root.click("-")
+            Button:
+                text:"0"
+                font_size:root.height/10
+                on_press:root.click("0")
+            Button:
+                text:"."
+                font_size:root.height/10
+                on_press:root.click(".")
+            Button:
+                text:"="
+                font_size:root.height/10
+                on_press:root.equal()
+            Button:
+                text:"+"
+                font_size:root.height/10
+                on_press:root.click("+")
+            Button:
+                text:"C"
+                font_size:root.height/10
+                on_press:root.clear()
+
+
+            
+            
