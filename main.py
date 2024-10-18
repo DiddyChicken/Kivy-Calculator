@@ -7,7 +7,7 @@ from kivy.uix.widget import Widget
 
 class calculator(Widget): # calculator app widget
     def __init__(self, **kwargs):
-        super(calculator, self).__init__(**kwargs)
+        super().__init__(**kwargs)
 
     def click(self, event): # function for buttons 0 to 9 and /*-+
         self.ids.outnum.text = self.ids.outnum.text + event
