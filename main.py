@@ -22,6 +22,7 @@ class calculator(Widget): # calculator app widget
 
 class myapp(App): # create the app
     def build(self):
+        self.title = "Calculator"
         return calculator() # return calculator widget
 
 
